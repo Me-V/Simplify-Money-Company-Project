@@ -15,9 +15,6 @@ The **Movie Search Mobile App** is a simple and user-friendly React Native appli
 - **Tailwind CSS** (for styling)
 - **OMDb API** (for movie data)
 
-## 📸 Screenshots
-_Include screenshots of the app here._
-
 ## 🔑 Prerequisites
 Before running the app, ensure you have the following installed:
 - [Node.js](https://nodejs.org/)
