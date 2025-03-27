@@ -1,4 +1,4 @@
-# Movie Search Mobile App
+# Movie Search Mobile App ( For Android Devices )
 
 ## 📌 Overview
 The **Movie Search Mobile App** is a simple and user-friendly React Native application that allows users to search for movies, view details such as ratings, posters, genres, and release years, and save their favorite movies. The app utilizes the **OMDb API** for fetching movie data and is built using **Expo** with **Tailwind CSS** for styling.
