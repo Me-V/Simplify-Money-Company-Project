@@ -1,50 +1,85 @@
-# Welcome to your Expo app 👋
+# Movie Search Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📌 Overview
+The **Movie Search Mobile App** is a simple and user-friendly React Native application that allows users to search for movies, view details such as ratings, posters, genres, and release years, and save their favorite movies. The app utilizes the **OMDb API** for fetching movie data and is built using **Expo** with **Tailwind CSS** for styling.
 
-## Get started
+## 🚀 Features
+- 🔍 **Search Movies**: Users can search for movies by title.
+- 🎭 **View Movie Details**: Display essential details like title, poster, release year, genre, and IMDb rating.
+- ⭐ **Save Favorites**: Users can save their favorite movies locally using **AsyncStorage**.
+- 📜 **Infinite Scroll**: Load more movies when scrolling to the bottom of the list.
+- 🎨 **Modern UI**: Styled using **Tailwind CSS**.
 
-1. Install dependencies
+## 🛠️ Tech Stack
+- **React Native** (via Expo)
+- **Tailwind CSS** (for styling)
+- **OMDb API** (for movie data)
 
-   ```bash
+## 📸 Screenshots
+_Include screenshots of the app here._
+
+## 🔑 Prerequisites
+Before running the app, ensure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- OMDb API Key (Sign up at [OMDb API](https://www.omdbapi.com/apikey.aspx))
+
+## ⚙️ Installation & Setup
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/movie-search-app.git
+   cd movie-search-app
+   ```
+
+2. **Install dependencies:**
+   ```sh
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. **Create an `.env` file** in the root directory and add your OMDb API key:
+   ```env
+   OMDB_API_KEY=your_api_key_here
    ```
 
-In the output, you'll find options to open the app in a
+4. **Start the app:**
+   ```sh
+   npx expo start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+5. **Scan the QR code** using Expo Go (Android/iOS) to run the app.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+## 📡 API Usage
+The app fetches movie data from the OMDb API using the following endpoint:
+```
+https://www.omdbapi.com/?s=SEARCH_TERM&apikey=YOUR_API_KEY
+```
+To fetch movie details:
+```
+https://www.omdbapi.com/?i=MOVIE_ID&apikey=YOUR_API_KEY
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📂 Project Structure
+```
+movie-search-app/
+│-- src/
+│   │-- components/       # Reusable UI components
+│   │-- screens/          # Screens for navigation
+│   │-- services/         # API calls and data fetching logic
+│   │-- styles/           # Tailwind configuration and styles
+│-- App.js                # Entry point of the app
+│-- package.json          # Project dependencies
+│-- .env                  # API key storage (not to be committed)
+```
 
-## Learn more
+## ✅ To-Do (Future Improvements)
+- 🎬 Implement detailed movie reviews section.
+- 📍 Add pagination for better performance.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🤝 Contributing
+Feel free to fork this repository and submit pull requests! Any contributions to enhance functionality or UI improvements are welcome.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📧 Contact
+For any queries, reach out to me at: [vasu.eit.21cse140@gmail.com]
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+**Happy Coding! 🚀🎬**
